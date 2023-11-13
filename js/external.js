@@ -13,14 +13,17 @@ let littleMermaidRentedDays = prompt("How many days did you rent The Little Merm
 let brotherBearRentedDays = prompt("How many days did you rent Brother Bear:")
 let herculesRentedDays = prompt("How many days did you rent Hercules:")
 let rentedRatePerDay = prompt("How much did you pay to rent per day:")
+let costForRental = littleMermaidRentedDays * rentedRatePerDay + brotherBearRentedDays * rentedRatePerDay + herculesRentedDays * rentedRatePerDay
+
+console.log(`I paid a total of ${costForRental}.00 to watch all of these movies!`)
+
 let googleRatePerHour = prompt("How much was your hourly wage when working at Google:")
 let amazonRatePerHour = prompt("How much was your hourly wage when working at Amazon:")
 let facebookRatePerHour = prompt("How much was your hourly wage when working at FaceBook:")
 let googleWorkedHours = prompt("How many hours did you work for Google:")
 let amazonWorkedHours = prompt("How many hours did you work for Amazon:")
 let facebookWorkedHours = prompt("How many hours did you work for FaceBook:")
-let costForRental = littleMermaidRentedDays * rentedRatePerDay + brotherBearRentedDays * rentedRatePerDay + herculesRentedDays * rentedRatePerDay
+
 let payCheck = googleRatePerHour * googleWorkedHours + amazonRatePerHour * amazonWorkedHours + facebookRatePerHour * facebookWorkedHours
 
-console.log(costForRental)
-console.log(payCheck)
+console.log(`I earned a total of ${payCheck}.00 for working at Amazon, Facebook and Google.`)
