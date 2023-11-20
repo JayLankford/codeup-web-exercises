@@ -3,7 +3,7 @@
     console.log("inside of planet-string.js");
     const planetString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
 
-    const planetArray = planetString.split(',');
+    const planetArray = planetString.split('|');
     console.log(planetArray);
 
     const updatedPlanetArray = planetArray.join("<br>");
