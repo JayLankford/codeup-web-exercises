@@ -8,12 +8,12 @@ const names = ['John', 'James', 'Juliet', 'Janet'];
         console.log(names);
 
     console.log('This is the names in order for the Array');
-    for (let i = 0; i < names.length; i++) {
-        console.log('The names in order are: ' + names[i]);
+    for (const item of names) {
+        console.log('The names in order are: ' + item);
         }
 
-    console.log('This is the forEach display of the array');
-    names.forEach(name => console.log(`The names in this array are: ${name}.`));
+        console.log('This is the forEach display of the array');
+        names.forEach(name => console.log(`The names in this array are: ${name}.`));
 
 
 function getRandomItem(array) {
@@ -21,7 +21,7 @@ function getRandomItem(array) {
         return "Array is Empty.";
     }
     let randomItem = Math.floor(Math.random() * array.length);
-    return array[randomIndex];
+    return array[randomItem];
 }
 function firstItem(array) {
     if(array.length > 0) {
@@ -39,7 +39,7 @@ function secondItem(array) {
 }
 function thirdItem(array) {
     if(array.length > 0) {
-        return array[2];
+        return array[4];
     }else {
         return "Array is Empty.";
     }
@@ -48,4 +48,5 @@ let theArray = ['Ford', 'Chevrolet', 'Dodge', 'Lexus', 'Acura'];
 console.log(firstItem(theArray));
 console.log(secondItem(theArray));
 console.log(thirdItem(theArray));
+console.log("This returns a random item from the Cars Brand Array")
 console.log(getRandomItem(theArray));
