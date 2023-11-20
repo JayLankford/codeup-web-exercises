@@ -11,6 +11,9 @@
 
     const planetsListArray = planetString.split('|');
 
+    const ulPlanetString = `<ul><li>${planetArray.join("</li><li>")}</li></ul>`;
+    console.log(ulPlanetString);
+
     const ulElement = document.createElement('ul');
 
     planetsListArray.forEach(function(item){
