@@ -39,7 +39,7 @@ function secondItem(array) {
 }
 function thirdItem(array) {
     if(array.length > 0) {
-        return array[4];
+        return array[array.length - 1];
     }else {
         return "Array is Empty.";
     }
